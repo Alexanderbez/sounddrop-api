@@ -1,0 +1,3 @@
+daemonize: true
+timeout: 30
+port: 8000
