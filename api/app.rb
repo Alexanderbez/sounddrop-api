@@ -1,12 +1,8 @@
-require 'logbert'
 require 'json'
 require 'sounddrop'
 
-LOG = Logbert[self]
-CLIENT = SoundDrop::Client.new(
-  client_id: ENV['SC_CLIENT_ID'],
-  client_secret: ENV['SC_CLIENT_SECRET']
-)
+# Setup
+load 'config/config.rb'
 
 # Set utf-8 for outgoing responses
 before do
@@ -28,11 +24,16 @@ error do
   )
 end
 
+get '/' do
+
+end
+
 # POST route to handle getting Soundcloud track information
 post '/api/drop' do
   request.body.rewind
   payload = JSON.parse(request.body.read)
 
+  LOG.info "Attempting to get Drop for #{payload['url']}"
   drop = CLIENT.get_drop(payload['url'])
   result = {
     title: drop.title,
