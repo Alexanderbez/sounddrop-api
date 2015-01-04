@@ -5,3 +5,7 @@ gem 'thin'
 gem 'sounddrop'
 gem 'logbert'
 gem 'rake'
+
+group :development do
+  gem 'pry'
+end

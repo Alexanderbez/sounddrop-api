@@ -1,10 +1,10 @@
 require 'sinatra'
 require './api/app'
 
-set :environment, ENV.fetch('ENV')
+set :environment, ENV.fetch('ENV', 'development')
 set :run, false
-set :raise_errors, true
 set :server, 'thin'
-set :show_exceptions, true
+disable :show_exceptions
+disable :raise_errors
 
 run Sinatra::Application
