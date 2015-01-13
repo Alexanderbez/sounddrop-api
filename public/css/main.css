@@ -1,0 +1,35 @@
+.center-block {
+    width: 600px;
+    padding-top: 250px;
+}
+.navbar-default .navbar-brand {
+    color: #f39c12;
+}
+.dl-button {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.dl-url {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #f39c12;
+    text-decoration: none;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: #f39c12;
+    box-shadow: 0 1px 1px #f7c370 inset, 0 0 8px #f7c370;
+    outline: 0 none;
+}

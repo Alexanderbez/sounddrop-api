@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <title>SoundDrop</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <a href="/" role="button" class="navbar-brand">
+                        SoundDrop
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="row">
+        <div class="center-block">
+            <form action="/song" name="songForm" method="post">
+                <input type="url" autocomplete="off" name="songUrl" class="form-control" required>
+                <input type="submit" class="btn btn-default dl-button" value="Download"></input>
+                <%= yield %>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

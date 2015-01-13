@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'erb'
 require './api/app'
 
 set :environment, ENV.fetch('ENV', 'development')
